@@ -27,5 +27,6 @@ public class Drawing extends Canvas {
 
     public void paint(Graphics g) {
         c.draw(g);
+    }
 
 }
