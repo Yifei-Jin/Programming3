@@ -8,6 +8,8 @@ import java.awt.*;
         private Point pos;
         private Color col;
 
+
+
         // The constructor
         public Circle(Point initPos, Color col, int radius){
             rad=radius; // Initialize fields
@@ -19,6 +21,8 @@ import java.awt.*;
             g.setColor(col);
             g.fillOval(pos.x,pos.y,rad, rad);
         }
+
+
     }
 
 

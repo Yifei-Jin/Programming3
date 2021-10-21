@@ -6,9 +6,11 @@ import java.awt.event.WindowEvent;
 public class Drawing extends Canvas {
     // A private field called f of class Frame. This is also in the AWT.
     private Frame f;
+    private Circle c;
 
     // The constructor
-    public Drawing() {
+    public Drawing(Circle cin) {
+        c=cin;
         f = new Frame("My window"); // Instantiates the Frame
         f.add(this); // Adds the Canvas to the Frame
         f.setLayout(null); // Stops the frame from trying to layout contents
@@ -24,5 +26,6 @@ public class Drawing extends Canvas {
     }
 
     public void paint(Graphics g) {
-    }
+        c.draw(g);
+
 }
