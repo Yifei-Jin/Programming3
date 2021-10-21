@@ -1,3 +1,7 @@
+import shapes.Circle;
+import shapes.Rect;
+import shapes.Square;
+
 import java.awt.*;
 public class Main {
     public static void main(String[] args){
@@ -13,6 +17,7 @@ public class Main {
         Rect r=new Rect(30,20,p2,c2);
         Circle c=new Circle(p1,c1,20);
         Drawing d=new Drawing(c,r,s);
+        //change the local repo
 
 
     }
