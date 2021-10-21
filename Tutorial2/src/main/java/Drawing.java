@@ -6,13 +6,25 @@ import java.awt.event.WindowEvent;
 public class Drawing extends Canvas {
     // A private field called f of class Frame. This is also in the AWT.
     private Frame f;
-    private Circle c;
+    private Circle cir;
     private Rect rec;
+    private Square Squa;
 
     // The constructor
-    public Drawing(Circle cin,Rect rin) {
-        c=cin;
+    public Drawing(Circle cin,Rect rin,Square sin ) {
+        cir=cin;
         rec=rin;
+        Squa=sin;
+        FrameSetUp();
+        CanvasSetUp();
+    }
+
+
+    private void CanvasSetUp() {
+        setBackground(Color.WHITE); // Sets the Canvas background
+        setSize(400, 400); // Sets the Canvas size to be the same as the frame
+    }
+    private void FrameSetUp() {
         f = new Frame("My window"); // Instantiates the Frame
         f.add(this); // Adds the Canvas to the Frame
         f.setLayout(null); // Stops the frame from trying to layout contents
@@ -23,13 +35,12 @@ public class Drawing extends Canvas {
                 f.dispose();
             }
         });
-        setBackground(Color.WHITE); // Sets the Canvas background
-        setSize(400, 400); // Sets the Canvas size to be the same as the frame
     }
 
     public void paint(Graphics g) {
-        c.draw(g);
+        cir.draw(g);
         rec.draw(g);
+        Squa.draw(g);
     }
 
 }
