@@ -9,6 +9,7 @@ public class Main {
     static GraphicsConfiguration gc; //class field containing config info
     public static void main(String[] args){
         JFrame frame=new JFrame(gc);    //creat a new JFframe
+        frame.setTitle("Draw Shapes");
         DrawingUIController control=new DrawingUIController();
         frame.setSize(500,600);
         control.getMainPanel();
