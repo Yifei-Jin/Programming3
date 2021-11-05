@@ -12,7 +12,6 @@ public class SimpleUI {
         //This next line closes the program when the frame is closed
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        
 
     }
 
